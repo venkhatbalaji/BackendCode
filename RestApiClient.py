@@ -20,6 +20,7 @@ def iterateMovie(movieData):
         for data in movieData:
             Titles.append(data['Title'])
         Titles.sort()
-        print(json.dumps(Titles))
+        for data in Titles:
+            print(data)
     except Exception as Ex:
         print(Ex)
